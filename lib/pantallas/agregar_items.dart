@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
+import 'package:prueba_palermo/entidades/ListaPrecio.dart';
 
 import '../entidades/Datos.dart';
 import '../entidades/DetalleFactura.dart';
@@ -228,8 +229,17 @@ class _AgregarItemPageState extends State<AgregarItemPage> {
     return cantTotal;
   }
 
-  // void _recalcularDetalles(String codProducto, double cantidad) {
-  //   _detalles.map((e) {
+  // void _recalcularDetalles() {
+  //   var tempDetalle = _detalles.toList();
+  //   tempDetalle.mapIndexed((i, e) {
+  //     var cant = _calcularCantidadAgrupada(e.producto.categoria);
+  //     var listasPrecio = e.producto.listasPrecio.where((element) => element.cantidad >= cant).toList();
+  //     listasPrecio.sort((a, b) => a.cantidad.compareTo(b.cantidad));
+  //     listasPrecio = listasPrecio.reversed.toList();
+  //
+  //
+  //
+  //
   //
   //   }).toList();
   //
